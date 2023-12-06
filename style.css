@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
@@ -87,6 +88,18 @@ h1 {
     padding: 11px 20px;
 }
 
+.button_3 {
+    border-radius: 14px;
+    background: #1B1A1A;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+    padding: 11px 20px;
+}
+
 .Section_2_h2 {
     /* центрирование строчных элементов */
     /* text-align: center; */
@@ -120,6 +133,15 @@ h1 {
     margin-right: auto;
 }
 
+.team-item{
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 36px;
+    margin-right: 15px;
+}
+
 .Section_2_name {
     max-width: 145px;
     color: #1B1A1A;
@@ -127,7 +149,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 152.941% */
-    margin-top: 80px;
+    /* margin-top: 80px; */
     /* margin-bottom: 10px; */
     /* margin-left: auto;
     margin-right: auto; */
@@ -148,6 +170,8 @@ h1 {
     margin: 0 auto;
     /* border:  2px solid violet;
     min-height: 100px; */
+    /* margin: 0; */
+    width: 100%;
 }
 
 .subtitle {
@@ -180,7 +204,7 @@ h1 {
 }
 
 .card_1 {
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
     max-width: 370px;
     text-align: center;
     display: inline-block;
@@ -222,9 +246,11 @@ h1 {
     justify-content: flex-end;
     /* поперечная ось */
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .sec_fluid_left{
+    margin-top: 100px;
     min-height: 600px;
     /* Для полномасштабных фоновых изображений */
     background: url(image/IMAGE.jpg) center/cover no-repeat;
@@ -286,6 +312,49 @@ ul {
     margin-right: 32px;
 }
 
+.Featured_projects {
+    padding: 100px;
+    background: #F7F7F7;
+}
+
+.Featured_projects_txtblock {
+    width: 50%; 
+}
+
+.f_title{
+    color: #1B1A1A;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px; /* 107.692% */
+    margin-bottom: 14px;
+}
+
+.f_text {
+    color: #645C55;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin-bottom: 30px;
+}
+
+.Featured_projects_link{
+    
+}
+
+.fpl{
+    margin-top: 40px;
+    /* margin-bottom: 100px; */
+    color: #1B1A1A;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.4px;
+}
+
 /*  */
 .sec-team{
     padding: 100px;
@@ -293,7 +362,7 @@ ul {
 }
 
 .flex-team {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
 
         /* прижимаем к правой части главную ось */
@@ -302,7 +371,7 @@ ul {
 }
 
 .text-team {
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
     /* max-width: 358px; */
     /* %соотношение */
     width: 38%; 
@@ -329,7 +398,7 @@ ul {
 .button_2 {
     /* скругление кнопки */
     border-radius: 14px;
-    background: #c7c4c4;
+    background: #1B1A1A;
 
     /* стилистика текста в кнопке */
     color: #FFF;
@@ -343,7 +412,7 @@ ul {
 }
 
 .teams {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     width: 68%;
 
     display: flex;
@@ -352,7 +421,7 @@ ul {
 }
 
 .teams-item {
-    border: 2px solid #403E3B;   
+    /* border: 2px solid #403E3B;    */
     width: 40%;
     display: flex;
     align-items: center;
@@ -363,6 +432,12 @@ ul {
 
 .teams-img {
     margin-right: 30px;
+}
+
+.photo_img {
+    /* width: 100%; */
+    /* min-width: 45px; */
+    max-width: 84px;
 }
 
 .teams-txt {
@@ -392,6 +467,14 @@ ul {
     /* главная ось */
     justify-content: space-between;
     /* поперечная ось */
+    align-items: center;
+}
+
+.sec_low_flex {
+    /* border: 2px solid #403E3B;  */
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -489,6 +572,12 @@ ul {
     width: 100%;
 }
 
+.burger_img {
+    /* width: 100%; */
+    /* min-width: 45px; */
+    max-width: 30px;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -498,7 +587,7 @@ ul {
     column-gap: 3%;
 }
 
-.grid-item img{
+/* .grid-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -537,17 +626,20 @@ ul {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-}
+} */
 
 .footer {
     padding: 60px 0;
 }
 
 .footer_flex {
+    min-height: 200px;
+    padding: 0 130px;
     display: flex;
     /* выравнивание */
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -560,7 +652,11 @@ ul {
 
 }
 .footer_text {
-
+    color: #645C55;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
 }
 
 .footer_icon {
@@ -573,6 +669,16 @@ ul {
     .main-img {
         display: none;
     }
+    .f_text {
+        width: 130%;
+    }
+    .txt-team {
+        width: 95%;
+    }
+    .photo_img {
+        /* width: 100%; */
+        max-width: 75px;
+    }
 
 }
 
@@ -582,6 +688,10 @@ ul {
         display: none;
     }.burger {
         display: block;
+    }
+    .photo_img {
+        /* width: 100%; */
+        max-width: 70px;
     }
 
 }
@@ -594,6 +704,30 @@ ul {
     .Featured_projects_box {
         justify-content: space-around;
     }
+    .box {
+        max-width: 167px;
+    }
+    .new_box {
+        max-width: 450px;
+        /* line-height: 42px; */
+    }
+    .sec_fluid_left {
+        justify-content: flex-end;
+    }
+    .teams-item {
+        width: 70%;
+    }
+    .new_box_text{
+        font-size: 30px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-team {
+        justify-content: center;
+    }
+    
 }
 
 @media (max-width: 580px) {
@@ -604,7 +738,98 @@ ul {
         font-size: 45px;
         line-height: 60px;
     }
+    .sec_fluid {
+        padding: 0 19px;
+    }
+    .sec_fluid_left {
+        justify-content: flex-end;
+        padding: 0 9px;
+        min-height: 300px;
+    }
+    /* .box_title {
+        color: #000000;
+    } */
+    .f_title {
+        font-size: 29px;
+        line-height: 32px;
+    }
+    .f_text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .Featured_projects_item {
+        min-height: 265px;
+    }
+    .p_sub {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    /* .button {
+        font-size: 16px;
+        padding: 3px 10px;
+
+    } */
+    .fpl {
+        font-size: 13px;
+    }
+    .title-team{
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .txt-team {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .teams {
+        /* width: 70%; */
+        max-width: 130px;
+    }
+    .teams-item{
+        margin-bottom: 9px;
+    }
+    .teams-title {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .teams-subtitle{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .button_2{
+        padding: 12px 20px;
+        line-height: 14px;
+    }
+    .sec_low{
+        padding: 0 55px;
+    }
+    .new_box_title{
+        font-size: 12px;
+    }
+    .new_box_text{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .button_3 {
+        padding: 3px 20px;
+        line-height: 14px;
+        font-size: 12px;
+    }
+    .footer_flex {
+        padding: 0 55px;
+    }
+    .footer_text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /* .flex-team {
+        justify-content: flex-start;
+    } */
+    .photo_img {
+        /* width: 100%; */
+        max-width: 50px;
+    }
 }
+
 
 @media (max-width: 540px) {
     .Featured_projects_item {
@@ -619,5 +844,118 @@ ul {
     }
     .title {
         font-size: 30px;
+    }
+    .button {
+        padding: 12px 20px;
+        line-height: 18px;
+    }
+    .flex-team {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo_img {
+        max-width: 180px;
+    }
+    /* .burger_img {
+        max-width: 20px;
+    } */
+}
+
+@media (max-width: 460px) {
+    .box {
+        max-width: 130px;
+    }
+    .box_title{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .box_text{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .Featured_projects_txtblock{
+        width: 70%;
+    }
+    .title-team{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .txt-team{
+        font-size: 12px;
+        line-height: 15px;
+        /* margin-right: 30px; */
+    }
+    .button_2 {
+        padding: 6px 12px;
+        line-height: 14px;
+    }
+    .teams{
+        max-width: 130px;
+    }
+    .teams-img {
+        /* max-width: 60px; */
+        max-width: 35px;
+    }
+    .sec_low {
+        padding: 0 34px;
+    }
+    .sec_low_button {
+        /* padding: 12px 20px; */
+    }
+    .photo_img {
+        max-width: 45px;
+    }
+    .flex-team {
+        justify-content: space-around;
+    }
+    .chel_img {
+        max-width: 55px;
+    }
+}
+
+@media (max-width: 425px) {
+    .button {
+        padding: 5px 15px;
+        line-height: 18px;
+    }
+    .sec_fluid {
+        min-height: 300px;
+    }
+    .Featured_projects_item {
+        width: 100%;
+    }
+    .flex-team {
+        display: block;
+    }
+    .text-team {
+        width: 100%;
+        max-width: 358px;
+        margin-bottom: 20px;
+    }
+    .photo_img {
+        max-width: 55px;
+    }
+    .logo_img {
+        max-width: 150px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .logo_img {
+        max-width: 120px;
+    }
+    .burger {
+        width: 24px;
+        height: 25px;
+    }
+    .button {
+        font-size: 13px;
+    }
+    .MainScreen h1 {
+        font-size: 35px;
+        line-height: 40px;
     }
 }
